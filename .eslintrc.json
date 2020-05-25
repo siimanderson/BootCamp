@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "rules": {
+    "react/require-default-props": "off"
+  }
+}
