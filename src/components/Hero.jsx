@@ -10,6 +10,7 @@ import { COLOR_MAIN_DARK, LAYOUT, COLOR_MAIN_LIGHT } from '../constants';
 import Button from './Button';
 import webpic from './ray_dalio_hero_web.jpg';
 import educatedPic from './educated_web_hero.jpg';
+import playstation from './playstation.png'
 
 
 
@@ -25,7 +26,7 @@ const HeroContent = styled.div`
     margin-right: auto;
     max-width: ${LAYOUT.desktop.maxWidth}px;
     padding: ${LAYOUT.desktop.spacing}px;
-    overflow: auto;
+    overflow: hidden;
 
     justify-content: space-between;
     a {
@@ -46,24 +47,24 @@ const HeroLeft = styled.div`
 `;
 
 const HeroRight = styled.div`
-    margin-right: 10px;
+    margin-right: 100px;
     float: right;
-
+    display: inline-block;
+    margin-bottom: -800px;
     img{
-        border-radius: 20px
-        width: 20%   
+        border-radius: 40px
     }
     .raydalio {
-        width: 200px
+        transform: rotate(-10deg) scale(0.4, 0.4) translate(800px, -1250px)
     }
     .educated {
-        width: 150px
+        transform: rotate(10deg) scale(0.7, 0.7) translate(-200px, -1000px)
     }
 
 `;
 
 const Sponsors = styled.div`
-    background-color: ${COLOR_MAIN_LIGHT}
+    background-color: ${COLOR_MAIN_LIGHT};
 `;
 
 
@@ -86,7 +87,7 @@ class Hero extends Component {
                     </HeroRight>
                 </HeroContent>
                 <Sponsors>
-                    
+                    <img className="playstation" src={playstation} alt="" />
                 </Sponsors>
             </HeroWrapper>
         );
