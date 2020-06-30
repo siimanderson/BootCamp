@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -63,17 +64,19 @@ const Header = () => (
         <HeaderNav>
           <li>
             <a href="/">
-              Contact us
+              Contact
             </a>
           </li>
         </HeaderNav>
 
+        
         <Button>
-          Try it free
+          Sign in
         </Button>
+        
 
         <Button buttonStyle="outline">
-          Try it free
+          Sign up
         </Button>
       </HeaderRight>
     </HeaderContent>
