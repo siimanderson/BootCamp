@@ -96,7 +96,7 @@ class Hero extends Component {
             <HeroWrapper>
                 <HeroContent>
                     <HeroLeft>
-                        <p>What is success?
+                        <p>What is success? 
                             <br></br><b>Number of books read</b></p>
                         <Button>
                             <a href="www.stackmentor.xyz">Try it free</a>
